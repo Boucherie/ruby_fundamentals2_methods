@@ -1,12 +1,13 @@
-
-def f_conversion(f_temp)
-  return "The temperature is #{(f_temp - 32) * (5.0 / 9.0x)} degrees Celsius."
+def greet_backwards(name)
+  return (name.reverse) + (name.reverse) 
 end
 
-puts "What is the tempepature in Fahrenheit?"
+puts greet_backwards('Emily')
 
-f_temp = gets.chomp
-f_temp =f_temp.to_f
+puts "___________________________________"
 
 
-puts f_conversion(f_temp)
+puts greet_backwards('Bob')
+puts greet_backwards('Shirly')
+puts greet_backwards('Sue')
+puts greet_backwards('Andy')
