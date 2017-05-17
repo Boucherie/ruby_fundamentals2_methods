@@ -1,4 +1,4 @@
-grocery_list = ["carrots", "toilet paper", "apples", "bananas", "yogurt"]
+grocery_list = ["carrots", "toilet paper", "apples", "bananas", "salmon", "yogurt"]
 # part 1
 def groceries(grocery_list)
   grocery_list.map do |item|
@@ -31,5 +31,32 @@ def missing_check(grocery_list, item_check)
     end
   end
 
-
 missing_check(grocery_list, "bananas")
+
+puts "------------------------"
+
+#part 4
+def display_second(grocery_list)
+  grocery_list[1]
+end
+
+puts display_second(grocery_list)
+
+puts "------------------------"
+
+#part 5
+def sorted_list(grocery_list)
+  puts groceries(grocery_list.sort)
+end
+
+sorted_list(grocery_list)
+
+puts "------------------------#6"
+
+#part 6
+def item_missing (grocery_list)
+  grocery_list.delete("salmon")
+  puts groceries(grocery_list)
+end
+
+item_missing(grocery_list)
