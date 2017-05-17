@@ -7,3 +7,13 @@ def groceries(grocery_list)
 end
 
 puts groceries(grocery_list)
+
+puts "------------------------"
+
+
+def add_to_list(grocery_list, new_item)
+  grocery_list << new_item
+  puts groceries(grocery_list)
+end
+
+add_to_list(grocery_list, "rice")
